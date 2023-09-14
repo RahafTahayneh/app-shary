@@ -1,38 +1,29 @@
+import { Tabs } from "@/components/Tabs";
 import { UserButton } from "@clerk/nextjs";
 import Link from "next/link";
 import { ReactNode } from "react";
 
-const links = [
-  { name: "Journals", href: "/journal" },
-  { name: "History", href: "/history" },
-];
-
 const DashboardLayout = ({ children }: { children: ReactNode }) => {
   return (
-    <div className="w-screen h-screen relative">
-      <aside className="absolute left-0 top-0 h-full w-[200px] border-r border-black/10">
-        <div className="px-4 my-4">
-          <span className="text-3xl">MOODY</span>
-        </div>
-        <div>
-          <ul className="px-4">
-            {links.map((link) => (
-              <li key={link.name} className="text-xl my-4">
-                <Link href={link.href}>{link.name}</Link>
-              </li>
-            ))}
-          </ul>
-        </div>
-      </aside>
-      <div className="ml-[200px] h-full w-[calc(100vw-200px)]">
-        <header className="h-[60px] border-b border-black/10">
-          <nav className="px-4 h-full">
+    <div className="w-screen h-screen relative ">
+      <div className=" h-full">
+        <header className="h-[80px] border-b border-black/10 flex flex-row items-center p-4 justify-between">
+          <div>
+            <h1 className="text-3xl font-bold ml-2 gradient-text cursor-pointer">
+              shary
+            </h1>
+          </div>
+          {/* PAGES LINKS */}
+          <div>
+            <Tabs />
+          </div>
+          <nav className="h-full">
             <div className="flex items-center justify-end h-full">
               <UserButton afterSignOutUrl="/" />
             </div>
           </nav>
         </header>
-        <div className="h-[calc(100vh-60px)]">{children}</div>
+        <div className="h-[calc(100vh-80px)] p-8">{children}</div>
       </div>
     </div>
   );

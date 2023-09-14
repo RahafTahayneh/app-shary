@@ -7,3 +7,8 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+.selected-link {
+  background-color: #ffc727;
+  border-radius: 8px;
+}
