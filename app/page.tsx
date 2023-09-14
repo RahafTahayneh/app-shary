@@ -11,7 +11,7 @@ export default async function Home() {
     <div className="w-screen h-screen  flex ">
       <div className="container mx-auto p-10 text-center bg-white overflow-hidden">
         <div className="absolute top-5 left-5">
-          <h1 className="text-4xl font-bold ml-2 gradient-text cursor-pointer">
+          <h1 className="text-3xl font-bold ml-2 gradient-text cursor-pointer">
             shary
           </h1>
         </div>
