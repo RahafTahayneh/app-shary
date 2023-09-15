@@ -5,7 +5,7 @@ import { ReactNode } from "react";
 
 const DashboardLayout = ({ children }: { children: ReactNode }) => {
   return (
-    <div className="w-screen h-screen relative ">
+    <div className="w-screen h-screen relative bg-gray-100">
       <div className=" h-full">
         <header className="h-[80px] border-b border-black/10 flex flex-row items-center p-4 justify-between">
           <div>

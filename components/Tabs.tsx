@@ -20,10 +20,10 @@ export const Tabs = () => {
         <a
           className={`flex items-center space-x-2 mr-4  sm:mr-16 
           ${selected === "links" ? "selected-link" : ""}
-           hover:bg-yellow-200 p-4 hover:rounded-md`}
+           hover:bg-gray-200 p-4 hover:rounded-md`}
         >
           <AiOutlineLink size={20} />
-          <span className="hidden sm:visible">Links</span>
+          <span className="hidden sm:block">Links</span>
         </a>
       </div>
       <div
@@ -35,10 +35,10 @@ export const Tabs = () => {
         <a
           className={`flex items-center space-x-2   ${
             selected === "profile" ? "selected-link" : ""
-          } hover:bg-yellow-200 p-4 hover:rounded-md `}
+          } hover:bg-gray-200 p-4 hover:rounded-md `}
         >
           <CgProfile size={20} />
-          <span className="hidden sm:visible">Profile Details</span>
+          <span className="hidden sm:block">Profile Details</span>
         </a>
       </div>
     </nav>

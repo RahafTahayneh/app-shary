@@ -23,7 +23,7 @@ const LottieAnimation = ({ animationData, className }) => {
   }, [animationData]);
 
   return (
-    <div className={clsx("h-90 w-90 mx-auto", className)} ref={containerRef} />
+    <div className={clsx("h-70 w-70 mx-auto", className)} ref={containerRef} />
   );
 };
 

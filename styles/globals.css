@@ -11,4 +11,5 @@
 .selected-link {
   background-color: #ffc727;
   border-radius: 8px;
+  font-weight: bold;
 }
