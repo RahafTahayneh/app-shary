@@ -7,7 +7,7 @@ import { CgProfile } from "react-icons/cg";
 
 export const Tabs = () => {
   const router = useRouter();
-  const [selected, setSelected] = useState("links");
+  const [selectedTab, setSelected] = useState("links");
 
   return (
     <nav className="container mx-auto flex flex-row items-center">
@@ -19,7 +19,7 @@ export const Tabs = () => {
       >
         <a
           className={`flex items-center space-x-2 mr-4  sm:mr-16 
-          ${selected === "links" ? "selected-link" : ""}
+          ${selectedTab === "links" ? "selected-link" : ""}
            hover:bg-gray-200 p-4 hover:rounded-md`}
         >
           <AiOutlineLink size={20} />
@@ -34,7 +34,7 @@ export const Tabs = () => {
       >
         <a
           className={`flex items-center space-x-2   ${
-            selected === "profile" ? "selected-link" : ""
+            selectedTab === "profile" ? "selected-link" : ""
           } hover:bg-gray-200 p-4 hover:rounded-md `}
         >
           <CgProfile size={20} />
